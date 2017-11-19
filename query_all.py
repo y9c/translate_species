@@ -1,11 +1,11 @@
 #! /usr/bin/env python3
-#
+############################################################
 #     File Name           :     query_all.py
 #     Created By          :     yc
 #     Creation Date       :     [2017-03-20 18:31]
-#     Last Modified       :     [2017-05-03 21:17]
+#     Last Modified       :     [2017-11-19 21:26]
 #     Description         :     input must be a file
-#
+############################################################
 
 
 """Example usage of terminaltables with colorclass.
@@ -40,7 +40,7 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 
-with open(os.path.join(__location__, './species.data.pickle'), 'rb') as f:
+with open(os.path.join(__location__, './data/species.data.pickle'), 'rb') as f:
     sub = pickle.load(f)
 
 
@@ -86,7 +86,7 @@ def wikiname(title):
 
 
 def local_query(list):
-    table_data = [["LatinName >>", "ChineseName"]]
+    table_data = [["LatinName", "ChineseName"]]
     for i in list:
         corrname, corrtype = correct_name(i)
         if corrtype == "unchanged":
@@ -100,7 +100,7 @@ def local_query(list):
 
 
 def online_query(list):
-    table_data = [["LatinName >>", "ChineseName"]]
+    table_data = [["LatinName", "ChineseName"]]
     for i in list:
         corrname, corrtype = correct_name(i)
         if corrtype == "unchanged":
@@ -116,7 +116,7 @@ def online_query(list):
 
 
 def allonline_query(list):
-    table_data = [["LatinName >>", "ChineseName"]]
+    table_data = [["LatinName", "ChineseName"]]
     for i in list:
         corrname, corrtype = correct_name(i)
         if corrtype == "unchanged":
