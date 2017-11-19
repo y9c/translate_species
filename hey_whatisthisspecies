@@ -1,0 +1,10 @@
+#! /bin/bash
+#################################################################################
+#     File Name           :     hey_whatisthisspecies.sh
+#     Created By          :     root
+#     Creation Date       :     [2017-11-03 15:43]
+#     Last Modified       :     [2017-11-03 15:43]
+#     Description         :      
+#################################################################################
+
+python3 /share/kit/translate_species/query_all.py $@
