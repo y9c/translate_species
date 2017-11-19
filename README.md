@@ -15,8 +15,8 @@ translate species name in to Chinese
 ### translate a list of species name (Fault-tolerant)
 
 ```bash
-# put your species name in file, one name in one line
-./hey_whatisthisspecies ./test/test.input.list
+# put your species names in file, one name in one line
+./query_all.py ./test/test.input.list
 ```
 
 ---
