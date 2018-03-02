@@ -9,7 +9,7 @@ translate species name into Chinese
 
 > 全世界最全的拉丁物种>>中文名对照表
 
-## clean data
+### data archive
 
 **download link**:
 [tsv格式下载](https://github.com/yech1990/translate_species/blob/master/data/all.species.tsv?raw=true)
