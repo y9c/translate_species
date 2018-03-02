@@ -1,26 +1,28 @@
-# translate_species
+# TRANSLATE SPECIES
 
-translate species name in to Chinese
+translate species name into Chinese
 
----
 
-## 全世界最全的拉丁物种>>中文名对照表
+## Data
 
+> The most comprehensive species name (Binomial nomenclature) to Chinese translation mapping table
+
+> 全世界最全的拉丁物种>>中文名对照表
+
+**download link**:
 [tsv格式下载](https://github.com/yech1990/translate_species/blob/master/data/all.species.tsv?raw=true)
 
----
 
 ## Command Line Usage
 
-### translate a list of species name (Fault-tolerant)
+- translate a list of species name (Fault-tolerant)
 
 ```bash
 # put your species names in file, one name in one line
 ./query_all.py ./test/test.input.list
 ```
 
----
 
 ## TODO
 
--[ ] single name string as command line input
+- [ ] single name string as command line input
